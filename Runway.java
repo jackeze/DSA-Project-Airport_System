@@ -1,0 +1,139 @@
+
+/*
+
+ * Purpose: A runWay class that holds planes
+
+ * Status: Complete and thoroughly tested
+
+ * Last update: 12/05/19
+
+ * Submitted:  12/05/19
+
+ * Comment: test suite and sample run attached
+
+ * @author: Anthony Polanco / Jackie Zheng
+
+ * @version: 2019.12.05
+
+ */
+/**
+ * The Class Runway.
+ */
+public class Runway {
+
+    /** The queue containing Plane type. */
+    private QueueCRAB<Plane> queue;
+
+    /** The runway name. */
+    private String runwayName;
+
+    /**
+     * Create a new runway.
+     *
+     * @param name the name
+     */
+    public Runway (String name) {
+        runwayName = name;
+        queue = new QueueCRAB<Plane>();
+    }
+
+    /**
+     * Create a new runway.
+     */
+    public Runway () {
+    }
+
+    /**
+     * Adds the plane into the queue.
+     *
+     * @param plane the plane
+     */
+    public void addPlane(Plane plane) {
+        queue.enqueue(plane);
+    }
+
+    /**
+     * Removes the plane from the queue.
+     *
+     * @return the plane
+     */
+    public Plane removePlane() {
+        return queue.dequeue();
+    }
+
+    /**
+     * Gets the queue.
+     *
+     * @return the queue
+     */
+    public QueueCRAB<Plane> getQueue() {
+        return queue;
+    }
+
+    /**
+     * Sets the queue.
+     *
+     * @param queue the new queue
+     */
+    public void setQueue(QueueCRAB<Plane> queue) {
+        this.queue = queue;
+    }
+
+    /**
+     * Gets the runway name.
+     *
+     * @return the runway name
+     */
+    public String getRunwayName() {
+        return runwayName;
+    }
+
+    /**
+     * Sets the runway name.
+     *
+     * @param runwayName the new runway name
+     */
+    public void setRunwayName(String runwayName) {
+        this.runwayName = runwayName;
+    }
+
+    /**
+     * Gets the plane.
+     *
+     * @return the plane
+     */
+    public Plane getPlane() {
+        return queue.peek();
+    }
+
+    /**
+     * adds all the plane flight number and destination into a string and return it.
+     *
+     * @return the string
+     */
+    public String toString() {
+        StringBuilder string = new StringBuilder();
+        for(int i =0; i<queue.getSize(); i++) {
+            if(queue.peek() != null) {
+                Plane plane = queue.dequeue();
+                string.append("\nFlight " + plane.getFlightNumber() + " to " + plane.getDestination());
+                queue.enqueue(plane);
+            }
+        }
+        return string.toString();
+    }
+
+    /**
+     * Gets the size.
+     *
+     * @return the size
+     */
+    public int getSize() {
+        return queue.numItems;
+    }
+    public boolean isEmpty() {
+        return queue.isEmpty();
+    }
+}
+
+

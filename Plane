@@ -1,0 +1,70 @@
+Class Plane
+java.lang.Object
+Plane
+
+public class Plane
+extends java.lang.Object
+The Class Plane which has the flight number, destination, and runway.
+Constructor Summary
+Constructors 
+Constructor and Description
+Plane(java.lang.String flight, java.lang.String dest, java.lang.String run)
+Creates a new plane.
+Method Summary
+All Methods Instance Methods Concrete Methods 
+Modifier and Type	Method and Description
+java.lang.String	getDestination()
+Gets the destination.
+java.lang.String	getFlightNumber()
+Gets the flight number.
+java.lang.String	getRunway()
+Gets the runway.
+void	setDestination(java.lang.String destination)
+Sets the destination.
+void	setFlightNumber(java.lang.String flightNumber)
+Sets the flight number.
+void	setRunway(java.lang.String runway)
+Sets the runway.
+Methods inherited from class java.lang.Object
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+Constructor Detail
+Plane
+public Plane(java.lang.String flight,
+             java.lang.String dest,
+             java.lang.String run)
+Creates a new plane.
+Parameters:
+flight - the flight
+dest - the destination
+run - the run
+Method Detail
+getFlightNumber
+public java.lang.String getFlightNumber()
+Gets the flight number.
+Returns:
+the flight number
+setFlightNumber
+public void setFlightNumber(java.lang.String flightNumber)
+Sets the flight number.
+Parameters:
+flightNumber - the new flight number
+getDestination
+public java.lang.String getDestination()
+Gets the destination.
+Returns:
+the destination
+setDestination
+public void setDestination(java.lang.String destination)
+Sets the destination.
+Parameters:
+destination - the new destination
+getRunway
+public java.lang.String getRunway()
+Gets the runway.
+Returns:
+the runway
+setRunway
+public void setRunway(java.lang.String runway)
+Sets the runway.
+Parameters:
+runway - the new runway

@@ -1,0 +1,108 @@
+Class ListArrayBased<T>
+java.lang.Object
+ListArrayBased<T>
+Type Parameters:
+T - the generic type
+All Implemented Interfaces:
+ListInterface<T>
+Direct Known Subclasses:
+ListArrayBasedPlus
+
+public class ListArrayBased<T>
+extends java.lang.Object
+implements ListInterface<T>
+The Class ListArrayBased.
+Field Summary
+Fields 
+Modifier and Type	Field and Description
+protected T[]	items
+The array of list items.
+protected int	numItems
+The number of items in list.
+Constructor Summary
+Constructors 
+Constructor and Description
+ListArrayBased()
+Creates a new list array based.
+Method Summary
+All Methods Instance Methods Concrete Methods 
+Modifier and Type	Method and Description
+void	add(int index, T item)
+Adds the new item into the array with the index.
+T	get(int index)
+Gets the item in the list based off of the index.
+boolean	isEmpty()
+Checks if is empty.
+void	remove(int index)
+Removes the item in the index.
+void	removeAll()
+Removes all items and create a new empty array.
+int	size()
+return the size.
+Methods inherited from class java.lang.Object
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+Field Detail
+items
+protected T[] items
+The array of list items.
+numItems
+protected int numItems
+The number of items in list.
+Constructor Detail
+ListArrayBased
+public ListArrayBased()
+Creates a new list array based.
+Method Detail
+isEmpty
+public boolean isEmpty()
+Checks if is empty.
+Specified by:
+isEmpty in interface ListInterface<T>
+Returns:
+true, if is empty
+size
+public int size()
+return the size.
+Specified by:
+size in interface ListInterface<T>
+Returns:
+the int
+removeAll
+public void removeAll()
+Removes all items and create a new empty array.
+Specified by:
+removeAll in interface ListInterface<T>
+add
+public void add(int index,
+                T item)
+         throws ListIndexOutOfBoundsException
+Adds the new item into the array with the index.
+Specified by:
+add in interface ListInterface<T>
+Parameters:
+index - the index
+item - the item
+Throws:
+ListIndexOutOfBoundsException - the list index out of bounds exception
+get
+public T get(int index)
+      throws ListIndexOutOfBoundsException
+Gets the item in the list based off of the index.
+Specified by:
+get in interface ListInterface<T>
+Parameters:
+index - the index
+Returns:
+the generic type
+Throws:
+ListIndexOutOfBoundsException - the list index out of bounds exception
+remove
+public void remove(int index)
+            throws ListIndexOutOfBoundsException
+Removes the item in the index.
+Specified by:
+remove in interface ListInterface<T>
+Parameters:
+index - the index
+Throws:
+ListIndexOutOfBoundsException - the list index out of bounds exception

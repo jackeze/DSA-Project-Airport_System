@@ -1,0 +1,57 @@
+Class ListArrayBasedPlus<T>
+java.lang.Object
+ListArrayBased<T>
+ListArrayBasedPlus<T>
+Type Parameters:
+T - the generic type
+All Implemented Interfaces:
+ListInterface<T>
+
+public class ListArrayBasedPlus<T>
+extends ListArrayBased<T>
+The Class ListArrayBasedPlus.
+Field Summary
+Fields inherited from class ListArrayBased
+items, numItems
+Constructor Summary
+Constructors 
+Constructor and Description
+ListArrayBasedPlus() 
+Method Summary
+All Methods Instance Methods Concrete Methods 
+Modifier and Type	Method and Description
+void	add(int index, T item)
+Adds the item into the array using index and if array is full, resize.
+void	reverse()
+Flips the items in the array.
+java.lang.String	toString()
+returns a string which items are all added into a single string.
+Methods inherited from class ListArrayBased
+get, isEmpty, remove, removeAll, size
+Methods inherited from class java.lang.Object
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+Constructor Detail
+ListArrayBasedPlus
+public ListArrayBasedPlus()
+Method Detail
+add
+public void add(int index,
+                T item)
+Adds the item into the array using index and if array is full, resize.
+Specified by:
+add in interface ListInterface<T>
+Overrides:
+add in class ListArrayBased<T>
+Parameters:
+index - the index
+item - the item
+toString
+public java.lang.String toString()
+returns a string which items are all added into a single string.
+Overrides:
+toString in class java.lang.Object
+Returns:
+the string
+reverse
+public void reverse()
+Flips the items in the array.

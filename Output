@@ -1,0 +1,148 @@
+Welcome to the Airport program!
+Enter number of runways: 3
+Enter the name of runway number 1:North
+Enter the name of runway number 2:South
+Enter the name of runway number 3:East
+Select from the following menu:
+  0. Exit program.
+  1. Plane enters the system.
+  2. Plane takes off.
+  3. Plane is allowed to re-enter a runway.
+  4. Runway opens.
+  5. Runway closes.
+  6. Display info about planes waiting to take off.
+  7. Display info about planes waiting to be allowed to re-enter a runway.
+  8. Display number of planes who have taken off.
+
+Make your menu selection now: 6
+No planes are waiting for takeoff on runway North!
+No planes are waiting for takeoff on runway South!
+No planes are waiting for takeoff on runway East!
+
+Make your menu selection now: 1
+Enter flight number: USA12
+Enter destination: Tampa
+Enter runway: North
+Flight USA12 is now waiting for takeoff on runway North.
+
+Make your menu selection now: 6
+These planes are waiting for takeoff on runway North :
+Flight USA12 to Tampa
+No planes are waiting for takeoff on runway South!
+No planes are waiting for takeoff on runway East!
+
+Make your menu selection now: 1
+Enter flight number: USA55
+Enter destination: France
+Enter runway: South
+Flight USA55 is now waiting for takeoff on runway South.
+
+Make your menu selection now: 1
+Enter flight number: United123
+Enter destination: NewYork
+Enter runway: East
+Flight United123 is now waiting for takeoff on runway East.
+
+Make your menu selection now: 1
+Enter flight number: AirFrance87
+Enter destination: LasVegas
+Enter runway: North
+Flight AirFrance87 is now waiting for takeoff on runway North.
+
+Make your menu selection now: 1
+Enter flight number: United123
+Enter destination: Cleveland
+Enter runway: South
+Flight United123 is now waiting for takeoff on runway South.
+
+Make your menu selection now: 1
+Enter flight number: Delta5
+Enter destination: Paris
+Enter runway: South
+Flight Delta5 is now waiting for takeoff on runway South.
+
+Make your menu selection now: 6
+These planes are waiting for takeoff on runway North :
+Flight USA12 to Tampa
+Flight AirFrance87 to LasVegas
+These planes are waiting for takeoff on runway South :
+Flight USA55 to France
+Flight United123 to Cleveland
+Flight Delta5 to Paris
+These planes are waiting for takeoff on runway East :
+Flight United123 to NewYork
+
+Make your menu selection now: 2
+Is flightUSA12cleared for takeoff(Y/N): N
+Flight USA12 is now waiting to be allowed to re-enter a runway 
+
+Make your menu selection now: 7
+These planes are waiting to be cleared to re-enter a runway:
+Flight USA12 to Tampa
+
+Make your menu selection now: 2
+Is flightUSA55cleared for takeoff(Y/N): N
+Flight USA55 is now waiting to be allowed to re-enter a runway 
+
+Make your menu selection now: 2
+Is flightUnited123cleared for takeoff(Y/N): Y
+Flight United123 has now taken off from runway East
+
+Make your menu selection now: 6
+These planes are waiting for takeoff on runway North :
+Flight AirFrance87 to LasVegas
+These planes are waiting for takeoff on runway South :
+Flight United123 to Cleveland
+Flight Delta5 to Paris
+No planes are waiting for takeoff on runway East!
+
+Make your menu selection now: 4
+Enter the name of the new runway : SouthEast
+Runway SouthEast has opened.
+
+Make your menu selection now: 1
+Enter flight number: Continental21
+Enter destination: Tokyo
+Enter runway: SouthEast
+Flight Continental21 is now waiting for takeoff on runway SouthEast.
+
+Make your menu selection now: 6
+These planes are waiting for takeoff on runway North :
+Flight AirFrance87 to LasVegas
+These planes are waiting for takeoff on runway South :
+Flight United123 to Cleveland
+Flight Delta5 to Paris
+No planes are waiting for takeoff on runway East!
+These planes are waiting for takeoff on runway SouthEast :
+Flight Continental21 to Tokyo
+
+Make your menu selection now: 8
+1 planes have taken off from the airport.
+
+Make your menu selection now: 5
+Enter runway: North
+Enter new runway for plane AirFrance87:SouthEast
+Flight AirFrance87  is now waiting for takeoff on runway SouthEast
+Enter new runway for plane USA12:East
+Flight USA12 has changed runway to East
+Runway North has been closed.
+
+Make your menu selection now: 6
+These planes are waiting for takeoff on runway South :
+Flight United123 to Cleveland
+Flight Delta5 to Paris
+No planes are waiting for takeoff on runway East!
+These planes are waiting for takeoff on runway SouthEast :
+Flight Continental21 to Tokyo
+Flight AirFrance87 to LasVegas
+
+Make your menu selection now: 7
+These planes are waiting to be cleared to re-enter a runway:
+Flight USA55 to France
+
+Make your menu selection now: 3
+Enter flight number: USA55
+Flight USA55 is now waiting for takeoff on runway South
+ 
+Make your menu selection now: 0
+The Airport is closing :Bye Bye....

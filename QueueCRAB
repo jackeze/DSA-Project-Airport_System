@@ -1,0 +1,123 @@
+Class QueueCRAB<T>
+java.lang.Object
+QueueCRAB<T>
+Type Parameters:
+T - the generic type
+All Implemented Interfaces:
+QueueInterface<T>
+
+public class QueueCRAB<T>
+extends java.lang.Object
+implements QueueInterface<T>
+The Class QueueCRAB.
+Field Summary
+Fields 
+Modifier and Type	Field and Description
+protected int	back
+The back.
+protected int	front
+The front.
+protected T[]	items
+The items array.
+protected int	numItems
+The number of items.
+Constructor Summary
+Constructors 
+Constructor and Description
+QueueCRAB()
+Create a new queue CRAB.
+Method Summary
+All Methods Instance Methods Concrete Methods 
+Modifier and Type	Method and Description
+T	dequeue()
+Dequeue or remove item from the queue.
+void	dequeueAll()
+Dequeue all or remove all items in the queue.
+void	enqueue(T newItem)
+Enqueue or add item into the queue.
+int	getSize()
+Gets the size.
+boolean	isEmpty()
+Checks if is empty.
+T	peek()
+Peek or show the item in the top.
+protected void	resize()
+Resize the array.
+java.lang.String	toString()
+adds all the items into the string and return that string.
+Methods inherited from class java.lang.Object
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+Field Detail
+numItems
+protected int numItems
+The number of items.
+front
+protected int front
+The front.
+back
+protected int back
+The back.
+items
+protected T[] items
+The items array.
+Constructor Detail
+QueueCRAB
+public QueueCRAB()
+Create a new queue CRAB.
+Method Detail
+isEmpty
+public boolean isEmpty()
+Checks if is empty.
+Specified by:
+isEmpty in interface QueueInterface<T>
+Returns:
+true, if is empty
+enqueue
+public void enqueue(T newItem)
+Enqueue or add item into the queue.
+Specified by:
+enqueue in interface QueueInterface<T>
+Parameters:
+newItem - the new item
+dequeue
+public T dequeue()
+          throws QueueException
+Dequeue or remove item from the queue.
+Specified by:
+dequeue in interface QueueInterface<T>
+Returns:
+the t
+Throws:
+QueueException - the queue exception
+dequeueAll
+public void dequeueAll()
+Dequeue all or remove all items in the queue.
+Specified by:
+dequeueAll in interface QueueInterface<T>
+peek
+public T peek()
+       throws QueueException
+Peek or show the item in the top.
+Specified by:
+peek in interface QueueInterface<T>
+Returns:
+the generic type
+Throws:
+QueueException - the queue exception
+toString
+public java.lang.String toString()
+adds all the items into the string and return that string.
+Specified by:
+toString in interface QueueInterface<T>
+Overrides:
+toString in class java.lang.Object
+Returns:
+the string
+resize
+protected void resize()
+Resize the array.
+getSize
+public int getSize()
+Gets the size.
+Returns:
+the size

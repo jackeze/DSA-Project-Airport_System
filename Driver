@@ -1,0 +1,114 @@
+Class Driver
+java.lang.Object
+Driver
+
+public class Driver
+extends java.lang.Object
+The Class Driver.
+Constructor Summary
+Constructors 
+Constructor and Description
+Driver() 
+Method Summary
+All Methods Static Methods Concrete Methods 
+Modifier and Type	Method and Description
+static boolean	checkIfValid(ListArrayBasedPlus<Runway> airport, java.lang.String flightNumber)
+this class checks if the flightnumber is valid or not and if theres any duplicates
+static void	displayNumberOfPlanes()
+Display number of planes.
+static void	displayWaitingToReEnter(ListArrayBasedPlus<Plane> waiting)
+Display waiting to re enter.
+static void	displayWaitingToTakeOff(ListArrayBasedPlus<Runway> airport)
+Display waiting to take off.
+static void	end()
+End.
+static void	enter(ListArrayBasedPlus<Runway> airport)
+enters a plane in the runway
+static void	main(java.lang.String[] args)
+The main method.
+static void	reEnter(ListArrayBasedPlus<Runway> airport, ListArrayBasedPlus<Plane> waiting)
+re-enters a plane specified by the user thats waiting to re-enter a runway
+static void	runwayClose(ListArrayBasedPlus<Runway> airport, ListArrayBasedPlus<Plane> waiting)
+closes a runway specified by the user and asks the user where to move all of the planes in the runway
+static void	runwayOpen(ListArrayBasedPlus<Runway> airport)
+opens a new runway
+static int	searchRunWay(ListArrayBasedPlus<Runway> airport, java.lang.String name)
+this class searches through the airport for a specific class
+static void	takeOff(ListArrayBasedPlus<Runway> airport, ListArrayBasedPlus<Plane> waiting)
+makes a plane takeoff in a roundRobin fashion and asks the user if they want to make the plane takeoff or await to enter runway
+Methods inherited from class java.lang.Object
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+Constructor Detail
+Driver
+public Driver()
+Method Detail
+main
+public static void main(java.lang.String[] args)
+The main method.
+Parameters:
+args - the arguments
+end
+public static void end()
+End.
+enter
+public static void enter(ListArrayBasedPlus<Runway> airport)
+enters a plane in the runway
+Parameters:
+airport - the airport
+takeOff
+public static void takeOff(ListArrayBasedPlus<Runway> airport,
+                           ListArrayBasedPlus<Plane> waiting)
+makes a plane takeoff in a roundRobin fashion and asks the user if they want to make the plane takeoff or await to enter runway
+Parameters:
+airport - the airport
+waiting - the waiting
+reEnter
+public static void reEnter(ListArrayBasedPlus<Runway> airport,
+                           ListArrayBasedPlus<Plane> waiting)
+re-enters a plane specified by the user thats waiting to re-enter a runway
+Parameters:
+airport - the airport
+waiting - the waiting
+runwayOpen
+public static void runwayOpen(ListArrayBasedPlus<Runway> airport)
+opens a new runway
+Parameters:
+airport - the airport
+runwayClose
+public static void runwayClose(ListArrayBasedPlus<Runway> airport,
+                               ListArrayBasedPlus<Plane> waiting)
+closes a runway specified by the user and asks the user where to move all of the planes in the runway
+Parameters:
+airport - the airport
+waiting - the waiting
+displayWaitingToTakeOff
+public static void displayWaitingToTakeOff(ListArrayBasedPlus<Runway> airport)
+Display waiting to take off.
+Parameters:
+airport - the airport
+displayWaitingToReEnter
+public static void displayWaitingToReEnter(ListArrayBasedPlus<Plane> waiting)
+Display waiting to re enter.
+Parameters:
+waiting - the waiting
+displayNumberOfPlanes
+public static void displayNumberOfPlanes()
+Display number of planes.
+searchRunWay
+public static int searchRunWay(ListArrayBasedPlus<Runway> airport,
+                               java.lang.String name)
+this class searches through the airport for a specific class
+Parameters:
+airport - the airport
+name - the name
+Returns:
+index returns the index of where the runway is and if its not in it returns -1
+checkIfValid
+public static boolean checkIfValid(ListArrayBasedPlus<Runway> airport,
+                                   java.lang.String flightNumber)
+this class checks if the flightnumber is valid or not and if theres any duplicates
+Parameters:
+airport - the airport
+flightNumber - the flight number
+Returns:
+true, if successful

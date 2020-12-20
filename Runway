@@ -1,0 +1,99 @@
+Class Runway
+java.lang.Object
+Runway
+
+public class Runway
+extends java.lang.Object
+The Class Runway.
+Constructor Summary
+Constructors 
+Constructor and Description
+Runway()
+Create a new runway.
+Runway(java.lang.String name)
+Create a new runway.
+Method Summary
+All Methods Instance Methods Concrete Methods 
+Modifier and Type	Method and Description
+void	addPlane(Plane plane)
+Adds the plane into the queue.
+Plane	getPlane()
+Gets the plane.
+QueueCRAB<Plane>	getQueue()
+Gets the queue.
+java.lang.String	getRunwayName()
+Gets the runway name.
+int	getSize()
+Gets the size.
+boolean	isEmpty() 
+Plane	removePlane()
+Removes the plane from the queue.
+void	setQueue(QueueCRAB<Plane> queue)
+Sets the queue.
+void	setRunwayName(java.lang.String runwayName)
+Sets the runway name.
+java.lang.String	toString()
+adds all the plane flight number and destination into a string and return it.
+Methods inherited from class java.lang.Object
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+Constructor Detail
+Runway
+public Runway(java.lang.String name)
+Create a new runway.
+Parameters:
+name - the name
+Runway
+public Runway()
+Create a new runway.
+Method Detail
+addPlane
+public void addPlane(Plane plane)
+Adds the plane into the queue.
+Parameters:
+plane - the plane
+removePlane
+public Plane removePlane()
+Removes the plane from the queue.
+Returns:
+the plane
+getQueue
+public QueueCRAB<Plane> getQueue()
+Gets the queue.
+Returns:
+the queue
+setQueue
+public void setQueue(QueueCRAB<Plane> queue)
+Sets the queue.
+Parameters:
+queue - the new queue
+getRunwayName
+public java.lang.String getRunwayName()
+Gets the runway name.
+Returns:
+the runway name
+setRunwayName
+public void setRunwayName(java.lang.String runwayName)
+Sets the runway name.
+Parameters:
+runwayName - the new runway name
+getPlane
+public Plane getPlane()
+Gets the plane.
+Returns:
+the plane
+toString
+public java.lang.String toString()
+adds all the plane flight number and destination into a string and return it.
+Overrides:
+toString in class java.lang.Object
+Returns:
+the string
+getSize
+public int getSize()
+Gets the size.
+Returns:
+the size
+isEmpty
+public boolean isEmpty()
+
+
